@@ -11,6 +11,9 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
 }
 
 /* Style the header */
@@ -48,7 +51,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    margin-bottom: 0px;
+    margin-top: auto;
+    justify-content: center;
     bottom: 0;
     width: 100%;
 }
