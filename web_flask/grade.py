@@ -18,6 +18,14 @@ def login():
 						   title='Login',
 						   css_file='styles/login.css')
 
+@app.route("/calculate", strict_slashes=False)
+def calculate():
+	"""Serves Calculator Page"""
+	return render_template("calculator.html",
+						   title='Calculate',
+						   css_file='styles/calculator.css',
+						   script='scripts/calculator.js')
+
 if __name__ == "__main__":
 	host = "0.0.0.0"
 	port = "5000"
