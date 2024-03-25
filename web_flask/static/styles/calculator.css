@@ -1,15 +1,13 @@
 .calculator {
 	display: flex;
 	align-items: center;
-
     max-width: 80%;
     margin: auto;
     padding: 20px;
-	background-color: #fff;
+	background-color: hsl(0, 0%, 100%);
 	border-radius: 4px;
-	margin-bottom: 70px;
-	
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 40px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 ul {
 	list-style: none;
@@ -46,15 +44,21 @@ button {
     cursor: pointer;
 	border-radius: 4px;
 	margin-bottom: 10px;
+	outline: 2px solid black;
+}
+button.gpa {
+	background-color: lightslategray;
+	margin-right: 10px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: indigo;
 }
 
 #result {
     margin-top: 20px;
     font-size: 18px;
+	text-align: center;
 }
 
 h2.heading {
