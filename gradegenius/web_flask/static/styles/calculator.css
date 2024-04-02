@@ -1,0 +1,107 @@
+#gpa-list {
+	list-style: none;
+	padding: 0;
+	width: 80%;
+	margin: 5px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: purple;
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	box-shadow: 0 0 10px;
+}
+
+li select,
+li button,
+li input
+ {
+	background-color: aliceblue;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	width: 40%;
+	cursor: pointer;
+	margin: 5px;
+}
+
+li input {
+	cursor: auto;
+}
+.gpa-field {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 90%;
+	border: 1px solid aliceblue;
+	padding: 10px;
+}
+
+.gpa-field:first-child {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.gpa-field:last-child {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.add-icon {
+	margin: 5px;
+	width: 30px;
+	aspect-ratio: 1;
+	background-image: url(../images/add_circle.png);
+	background-repeat: no-repeat;
+	background-color: white;
+	border: none;
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.remove-icon {
+	width: 30px;
+	aspect-ratio: 1;
+	background-image: url(../images/close.png);
+	background-repeat: no-repeat;
+	background-color: white;
+	border: 1px solid aliceblue;
+	background-size: cover;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.result {
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: azure;
+	width: 30%;
+	border-radius: 5px;
+	aspect-ratio: 5.5;
+	font-size: 20px;
+	padding: 5px;
+}
+
+h1 {
+	margin: 0;
+	color: white;
+}
+
+p {
+	margin-bottom: 0;
+	color: white;
+}
