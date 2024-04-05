@@ -1,11 +1,15 @@
 {% extends 'layout.html' %}
 {% block content %}
 <div class="container">
-	<h1>GPA Calculator</h1>
-	<p>Select Grade and Corresponding Credit Hours</p>
+	<h2>GPA Calculator</h2>
+	<div class="headers">
+		<p class="course-name">Course Name</p>
+		<p class="grade-name">Grade</p>
+		<p class="hour-name">Credit</p>
+	</div>
 	<ul id="gpa-list">
 		<li class="gpa-field">
-			<input type="text" name="course" class="course" placeholder="Course code">
+			<input type="text" name="course" class="course" placeholder="Eg., Fluid Mechanics I">
 			<select class="gpa-grade" name="gpa-option">
 				<option value="">Grade</option>
 				<option value="A">A</option>
@@ -27,7 +31,15 @@
 			<button id="remove-grade" class="remove-icon" title="Remove this course"></button>
 		</li>
 	</ul>
-	<button id="add-list" class="add-icon" title="Add a new course"></button>
-	<div id="result" class="result" title="Result will be shown here">&nbsp;</div>
+	<div class="bottom">
+		<div class="result">
+			<p>Your GPA:&nbsp;</p>
+			<p id="result" class="result-p" title="Result will be shown here">&nbsp;</p>
+		</div>
+		<div class="add-course" id="add-list" title="Add a new course">
+			<button  class="add-icon"></button>
+			<p>Add Course</p>
+		</div>
+	</div>
 </div>
 {% endblock content %}
