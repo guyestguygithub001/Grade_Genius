@@ -65,3 +65,7 @@ Contributions are welcome!
 - [Wonders Victor](https://github.com/Wondahs)
 - [Daniel Ene](https://github.com/guyestguygithub001)
 - [Oyadier Mensah](https://github.com/oyadier)
+
+# Blog Post
+See experience challenges, and lessons learned while working on this project.
+[Blog Post](https://docs.google.com/document/d/1Mf4O6V4wBi7mZW-8x2KZH9Re8amWVBW9-1Z9RPUxyFI/edit?usp=drivesdk)
