@@ -1,6 +1,6 @@
 /* Add this CSS in a separate file named 'styles.css' and link it in your HTML head section */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@700&display=swap");
-/* Reset some default styles */
+@import url('https://fonts.cdnfonts.com/css/d-din');
+                /* Reset some default styles */
 body, h1, p, ul {
     margin: 0;
     padding: 0;
@@ -8,27 +8,49 @@ body, h1, p, ul {
 
 /* Apply a font throughout the page */
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'D-DIN', sans-serif;
+    font-family: 'D-DIN Condensed', sans-serif;
+    /* font-family: 'D-DIN Exp', sans-serif; */
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    /* padding-top: 20px; */
+    width: 100%;
+    font-size: larger;
 }
 
 /* Style the header */
 header {
-    background-color: #333;
     color: #fff;
     padding: 10px 0;
+    padding-left: 50px;
+    padding-top: 20px;
+    display: flex;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: rgb(219, 6, 219);
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    /* border-bottom: #ddd solid 1px; */
 }
 
+nav {
+    margin-left: auto;
+    width: auto;
+    display: flex;
+}
 /* Style the navigation menu */
 nav ul {
+    padding-right: 100px;
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
 nav ul li {
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 nav ul li a {
@@ -44,11 +66,120 @@ nav ul li a:hover {
 
 /* Style the footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    /* background-color: rgb(219, 6, 219); */
+    background-color: #ffffff;
+    background-size: cover;
+    color: black;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     width: 100%;
+    /* border-top: 1px solid white; */
+    margin-top: 30px;
+    /* box-shadow: 0 0 10px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    font-size: smaller;
+}
+
+footer p {
+    align-self: center;
+    position: absolute;
+}
+
+header img {
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 5px;
+}
+
+header .logo a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+}
+
+header .logo a h1 {
+    font-size: larger;
+}
+
+.logo a:visited {
+    text-decoration: none;
+}
+
+.logo a:hover {
+    filter: brightness(70%);
+}
+
+.logo a h1 {
+    line-height: 0.7;
+    font-size: 18px;
+    color: white;
+}
+
+.status {
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 5px;
+    border: 1px black solid;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        position: fixed;
+        background-color: purple;
+        background-image: url(../images/background.jpg);
+        background-size: cover;
+        right: -450px;
+        width: 250px;
+        height: 100%;
+        padding-top: 50px;
+        transition: right 0.5s ease;
+        margin-left: 30px;
+        border-left: 3px solid #ddd;
+        border-top-left-radius: 5px;
+    }
+
+    nav ul {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin-bottom: 20px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+ .nav-toggle {
+    display: block;
+    position: fixed;
+    top: 7px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 5;
+ }
+ .nav-toggle:hover {
+    font-size: 22px;
+ }
 }
